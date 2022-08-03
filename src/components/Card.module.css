@@ -1,0 +1,53 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.card img {
+  width: 10%;
+  margin: 10px;
+}
+
+.card h1 {
+  width: 50%;
+  margin: auto;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(25, 167, 202);
+  text-shadow: 2px 2px 8px #ff0000;
+}
+
+.subCard {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(25, 167, 202);
+  border-radius: 10px;
+  box-shadow: -10px 10px 8px #888888;
+}
+
+.card p {
+  text-shadow: 2px 2px 8px rgb(17, 16, 16);
+  margin: 0px 76px;
+}
+
+.card h4{
+    margin: 7px;
+    font-size: 1.5rem;
+    color: brown;
+    text-shadow: 2px 2px 8px #ff0000;
+}
+
+.card h2{
+  font-size: 1.3rem;
+  font-family: cursive;
+  text-shadow: 1px 1px 8px #030303;
+}
+
+.card h3{
+  text-shadow: 1px 1px 8px #030303;
+}
