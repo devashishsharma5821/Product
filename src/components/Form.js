@@ -1,10 +1,16 @@
 import React,{useState} from "react";
 import classes from "./Form.module.css";
+import { useHistory , useLocation } from "react-router-dom";
 
 
 export default function Form(props) {
     const [minVal, setMinVal] = useState();
     const [maxVal, setMaxVal] = useState();
+    const history = useHistory();
+    const location = useLocation();
+
+  const queryParams = new URLSearchParams(location.search);
+  const isSortingAscending = queryParams.get('min');
 
   const onMinChangeHandler = (event) => {
         setMinVal(event.target.value);
@@ -16,6 +22,7 @@ export default function Form(props) {
 
   const onSubmitHandler = (event) => {
        event.preventDefault();
+       history.push(`/?min${minVal}:max${maxVal}`)
        props.onSubmit(minVal,maxVal);
   }
 

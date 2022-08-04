@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import { Route } from "react-router-dom";
 import Item from "./components/Item";
 import Form from './components/Form';
 import "./App.css";
@@ -32,7 +33,9 @@ function App() {
   return (
     <Fragment>
       <Form onSubmit={onformSubmitHandler}/>
-      <Item num1={num1} num2={num2} minVal={minVal} maxVal={maxVal} />
+      <Route path='/'>
+         <Item num1={num1} num2={num2} minVal={minVal} maxVal={maxVal} />
+      </Route>
       <Button
         prevSubmitHandler={prevSubmitHandler}
         nextSubmitHandler={nextSubmitHandler}

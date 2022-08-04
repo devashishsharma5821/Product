@@ -1,5 +1,11 @@
 
-.noItem{    text-align: center;
+.noItem{    
+    text-align: center;
     margin-top: 20px;
     font-size: 1.3rem;
+}
+
+.main-container{
+   width:100%;
+   background-color: aquamarine;
 }
